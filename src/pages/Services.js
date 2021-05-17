@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom'
 import Curtain from '../assets/curtain 1.png'
 import Bulb from '../assets/Vector (2).png'
 import Stereo from '../assets/stereo-camera 1.png'
@@ -68,7 +68,7 @@ function Services() {
                 and video intercoms and top-of-the-line telephony system.
               </p>
               <div class="req--btn">
-                <a>Request Quote</a>
+                <Link to='/contact'>Request Quote</Link>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ function Services() {
                 Switches and Smart Blind system.
               </p>
               <button class="req--btn">
-                <a>Request Quote</a>
+                <Link to='/contact'>Request Quote</Link>
               </button>
             </div>
           </div>
@@ -129,7 +129,7 @@ function Services() {
                 you achieve optimal energy management.
               </p>
               <div class="req--btn">
-                <a>Request Quote</a>
+                <Link to='/contact'>Request Quote</Link>
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@ function Services() {
                 home issue to become not just a residence but a sanctuary.
               </p>
               <div class="req--btn">
-                <a>Request Quote</a>
+                <Link to='/contact'>Request Quote</Link>
               </div>
             </div>
           </div>
@@ -180,7 +180,7 @@ function Services() {
                 your home into the 21st Century
               </p>
               <div class="req--btn">
-                <a>Talk to a Professional</a>
+                <Link to='/contact'>Talk to a Professional</Link>
               </div>
             </div>
           </div>

@@ -8,33 +8,34 @@ import { useLocation } from 'react-router-dom'
 function Navbar({ toggle }) {
     const location = useLocation()
     let showBtn = `${location.pathname == '/contact' ? '0' : '1'}`
+    const getNavLinkClass = (path) => location.pathname.startsWith(path) ? "active" : "";
     return (
         <>
          <Nav>
             <NavbarContainer>
-                <NavLogo to="/">
+                <NavLogo to="/home">
                     <img src={Logo} alt="cityTech logo"/>
                 </NavLogo>
                 <MobileIcon >
                     <FaBars onClick={toggle}/>
                 </MobileIcon>
                 <NavMenu>
-                    <NavItem>
-                        <NavLinks to="/">
+                    <NavItem className={`${getNavLinkClass('/home')}`}>
+                        <NavLinks to="/home">
                             Home
                         </NavLinks>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className={`${getNavLinkClass('/about')}`}>
                         <NavLinks to="/about">
                             About Us
                         </NavLinks>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className={`${getNavLinkClass('/services')}`}>
                         <NavLinks to="/services">
                             Our Services
                         </NavLinks>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className={`${getNavLinkClass('/blog')}`}>
                         <NavLinks  to="/blog">
                             Blog
                         </NavLinks>

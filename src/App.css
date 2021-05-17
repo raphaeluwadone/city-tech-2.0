@@ -1453,15 +1453,15 @@ body {
 
 .main__contact .contact__content h2 {
   width: 46rem;
-  font-size: 3.4375rem;
+  font-size: 4.063rem;
+  line-height: 6.378rem;
   font-weight: 700;
-  line-height: 6.37812rem;
 }
 
 .main__contact .contact__content p {
   width: 29.125rem;
   font-size: 1.5rem;
-  line-height: 1.8975rem;
+  line-height: 2.25rem;
   color: #989898;
 }
 
@@ -1728,6 +1728,7 @@ body {
   border: 2px solid white;
   border-radius: 669px;
   width: 235px;
+  color: white;
   padding: 20px 40px;
   display: flex;
   align-items: center;
@@ -1741,12 +1742,14 @@ body {
 
 .slide__text  .btn  .link {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
 .slide__text  .btn:hover {
   cursor: pointer;
   transform: scale(1.05);
+  background-color: white;
+  color: black;
 }
 
 .slide__text  .btn:active {

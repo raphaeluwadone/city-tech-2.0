@@ -11,7 +11,7 @@ function Slide({icon, heading, lead, desc}) {
                     <h2>{heading}</h2>
                     <p>{desc}</p>
                     <div className='btn'>
-                        <Link className='link'>
+                        <Link to='/services' className='link'>
                             Learn More
                         </Link>
                     </div>

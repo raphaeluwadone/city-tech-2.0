@@ -85,6 +85,12 @@ input[type="submit"] {
     margin-left: 30px;
     font-size: 24px;
     font-weight: 400;
+    transition: .3s all ease-in-out;
+
+    &:focus {
+        outline: none;
+        transform: scale(.95)
+    }
 }
 
 @media screen and (max-width: 768px) {

@@ -104,6 +104,14 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     height: 80px;
     cursor: pointer;
+    font-size: 24px;
+    font-weight: 400;
+
+    &.active {
+        font-size: 30px;
+        font-weight: 700;
+        color: red;
+    }
 
 `
 
@@ -114,15 +122,9 @@ export const NavLinks = styled(LinkR)`
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
-    font-weight: 400;
+    font-weight: inherit;
     line-height: 28px;
-    font-size: 24px;
-
-
-    &.active {
-        border-bottom: 4px solid #01bf71;
-        font-weight: bolder;
-    }
+    font-size: inherit;
 `
 
 export const NavBtnWrapper = styled.div`

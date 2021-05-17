@@ -14,7 +14,7 @@ function Sidebar({isOpen, toggle}) {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="/">
+                    <SidebarLink to="/home">
                         Home
                     </SidebarLink>
                     <SidebarLink to="./about">
