@@ -13,6 +13,10 @@
 } */
 
 .req--btn {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75625rem;
   width: 19rem;
   height: 3.9375rem;
   border-radius: 3.75rem;
@@ -45,6 +49,10 @@
 .req--btn:hover {
   background-color: #F88125;
   color: white;
+}
+
+.req--btn:focus {
+  outline: none;
 }
 
 /* @media screen and (max-width: 768px) {
@@ -1902,4 +1910,51 @@ body {
     margin: auto;
   }
 
+}
+
+/* Toast Style */
+.toast {
+  width: 350px;
+  height: 100px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 30px;
+  right: 50%;
+  transform: translate(50%);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5600b9;
+  text-align: center;
+  font-weight: 400;
+}
+
+.success {
+  background-color: #5600b9;
+}
+
+.error {
+  background-color: #b93400;
+}
+
+.cancel {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .toast {
+    top: 890px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .toast {
+    top: 780px;
+  }
 }
