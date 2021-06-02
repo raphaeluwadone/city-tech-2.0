@@ -76,7 +76,7 @@ export const NavLogo = styled(LinkR)`
 export const MobileIcon = styled.div`
     display: none;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
         display: block;
         position: absolute;
         top: 0;
@@ -96,7 +96,7 @@ export const NavMenu = styled.ul`
     text-align: center;
     margin-right: -22px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
         display: none;
     }
 ` 
@@ -110,7 +110,14 @@ export const NavItem = styled.li`
     &.active {
         font-size: 30px;
         font-weight: 700;
-        color: red;
+    }
+    @media screen and (max-width: 950px) {
+        font-size: 16px;
+
+        &.active {
+            font-size: 20px;
+            font-weight: 700;
+        }
     }
 
 `
@@ -140,6 +147,7 @@ export const NavBtnWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     &:hover {
         background: #F88125;
@@ -154,7 +162,19 @@ export const NavBtnWrapper = styled.div`
         outline: 0;
     }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
+    border: 1px solid #F88125;
+    transition: 0.3s all ease-in-out;
+    width: 12rem;
+    border-radius: 40px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
     display: none;
 }
 
@@ -177,5 +197,9 @@ export const NavBtn = styled(LinkR)`
     }
     &:focus {
         outline: 0;
+    }
+
+    @media screen and (max-width: 950px) {
+        font-size: 1rem;
     }
 `

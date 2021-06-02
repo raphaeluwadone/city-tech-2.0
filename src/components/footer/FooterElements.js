@@ -4,8 +4,9 @@ import {Link as LinkR} from 'react-router-dom'
 export const FooterContainer = styled.div`
     width: 100%;
     background: black;
-    height: 283px;
+    min-height: 283px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
@@ -14,16 +15,17 @@ export const FooterContainer = styled.div`
     @media screen and (max-width: 768px) {
         height: 373px;
         flex-direction: column;
-        padding: 30px;
-    }
-
-    @media screen and (max-width: 768px) {
         justify-content: center;
         padding: 10px;
     }
 
+    @media screen and (max-width: 768px) {
+
+    }
+
 `
 export const FooterLinks = styled.div`
+    margin: 0 auto;
 
 
 `
@@ -60,6 +62,7 @@ export const SocialLinks = styled.div`
 `
 
 export const FooterForm = styled.div`
+    margin: 0 auto;
     margin-top: 50px;
 
 p {
@@ -67,10 +70,16 @@ p {
     line-height: 40px;
 }
 
+form {
+    margin: 0 auto;
+    width: auto;
+}
+
 input[type="text"] {
     width: 372px;
     height: 72px;
     padding-left: 30px;
+    margin: 0 auto;
     margin-top: 15px;
     font-size: 20px;
     line-height: 36px;
