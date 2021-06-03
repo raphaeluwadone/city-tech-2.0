@@ -148,6 +148,7 @@ export const NavBtnWrapper = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 16px;
 
     &:hover {
         background: #F88125;

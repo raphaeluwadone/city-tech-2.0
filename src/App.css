@@ -770,7 +770,7 @@
     padding: 30px;
   }
   .services__main__content h1 {
-    width: 28.25rem;
+    max-width: 28.25rem;
     font-size: 2.5625rem;
     line-height: 4.05563rem;
   }
@@ -1037,7 +1037,8 @@
 }
 
 body {
-  width: 99.08vw;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .home__main {
