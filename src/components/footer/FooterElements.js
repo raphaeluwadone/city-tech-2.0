@@ -73,13 +73,18 @@ p {
 form {
     margin: 0 auto;
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 input[type="text"] {
     width: 372px;
     height: 72px;
-    padding-left: 30px;
+    padding-left: 30px;    
     margin: 0 auto;
+    margin-bottom: 10px;
     margin-top: 15px;
     font-size: 20px;
     line-height: 36px;
@@ -90,6 +95,7 @@ input[type="submit"] {
     height: 72px;
     border-radius: 60px;
     border: 1px solid black;
+    margin-bottom: 10px;
     cursor: pointer;
     margin-left: 30px;
     font-size: 24px;
