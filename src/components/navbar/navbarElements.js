@@ -106,12 +106,23 @@ export const NavItem = styled.li`
     cursor: pointer;
     font-size: 24px;
     font-weight: 400;
+    
 
     &.active {
         font-size: 30px;
         font-weight: 700;
     }
-    @media screen and (max-width: 950px) {
+
+    @media screen and (max-width: 1161px) {
+        font-size: 20px;
+
+        &.active {
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+    @media screen and (max-width: 955px) {
         font-size: 16px;
 
         &.active {
@@ -163,7 +174,13 @@ export const NavBtnWrapper = styled.div`
         outline: 0;
     }
 
-@media screen and (max-width: 950px) {
+    @media screen and (max-width: 1160px) {
+        width: 12rem;
+        height: 63px;
+        margin-left: 8px;
+    }
+
+@media screen and (max-width: 955px) {
     border: 1px solid #F88125;
     transition: 0.3s all ease-in-out;
     width: 12rem;
@@ -187,6 +204,14 @@ export const NavBtn = styled(LinkR)`
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.75625rem;
+    // padding: 1rem 2.52rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border-radius: 30px;
+
 
     &:hover {
         color: white;
@@ -200,7 +225,11 @@ export const NavBtn = styled(LinkR)`
         outline: 0;
     }
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1160px) {
+        font-size: 1.15rem;
+    }
+
+    @media screen and (max-width: 955px) {
         font-size: 1rem;
     }
 `

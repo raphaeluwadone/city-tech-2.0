@@ -17,7 +17,8 @@ function Blog() {
         </div>
     </main>
     <section class="blog__section">
-        <div class="single__blog">
+        <h1>Oops, no blog posts yet!</h1>
+        {/* <div class="single__blog">
             <div class="blog--icon">
                 <img src={Vector2} alt="" />
             </div>
@@ -40,7 +41,7 @@ function Blog() {
                 </div>
                 <a href="">See more</a>
             </div>
-        </div>
+        </div> */}
     </section>
         </>
     )

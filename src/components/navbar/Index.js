@@ -21,22 +21,22 @@ function Navbar({ toggle }) {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem className={`${getNavLinkClass('/home')}`}>
-                        <NavLinks to="/home">
+                        <NavLinks to="./home">
                             Home
                         </NavLinks>
                     </NavItem>
                     <NavItem className={`${getNavLinkClass('/about')}`}>
-                        <NavLinks to="/about">
+                        <NavLinks to="./about">
                             About Us
                         </NavLinks>
                     </NavItem>
                     <NavItem className={`${getNavLinkClass('/services')}`}>
-                        <NavLinks to="/services">
+                        <NavLinks to="./services">
                             Our Services
                         </NavLinks>
                     </NavItem>
                     <NavItem className={`${getNavLinkClass('/blog')}`}>
-                        <NavLinks  to="/blog">
+                        <NavLinks  to="./blog">
                             Blog
                         </NavLinks>
                     </NavItem>

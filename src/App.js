@@ -9,7 +9,6 @@ function App() {
       <Templates>
         <RenderRoutes routes={ROUTES} />
       </Templates>
-      
     </>
   );
 }

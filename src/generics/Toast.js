@@ -7,6 +7,9 @@ function Toast({toggle, toast}) {
     if (toast.status == 'success') {
         message = "Thank you for contacting cityTech. A specialist would get to you shortly"
     }
+    if (toast.status == 'subscribed') {
+        message = "Thank you for Subscribing. Get ready for the latest Tech insights"
+    }
     if (toast.status == 'error') {
         message = "Please ensure to fill all fields, Thank you."
     }
@@ -15,7 +18,7 @@ function Toast({toggle, toast}) {
     }
     
     return (
-        <div className={`toast ${toast.status == 'success'? 'success' : 'error'}`}>
+        <div className={`toast ${toast.status !== 'error' ? 'success' : 'error'}`}>
             <div className='cancel'><ImCancelCircle onClick={toggle}/></div>
             <p>{message}</p>
         </div>

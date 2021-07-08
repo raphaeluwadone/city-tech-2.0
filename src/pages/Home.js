@@ -8,11 +8,14 @@ import CardThree from "../assets/Rectangle 261-2.png";
 import Strike from "../assets/orange-strike.png";
 import "../App.css";
 import Carousel from  '../components/carousel/Carousel' 
+import TopArrow from "../components/TopArrow";
+
 
 function Home() {
   return (
     <>
-      <main className="home__main">
+      <main className="home__main" id="home">
+        <TopArrow url={'home'}/>
         <div className="home__main__title">
           <h1>Security and comfort, with the push of a button</h1>
           <p>

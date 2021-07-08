@@ -2,13 +2,16 @@ import React from "react";
 import Mission from "../assets/Vector (1).png";
 import Vission from "../assets/XMLID 2012.png";
 import ImgMain from "../assets/Vector.png";
+import TopArrow from "../components/TopArrow";
+
 
 function About() {
   return (
     <>
-      <main class="about__main">
-        <div class="about__main__content">
-          <div class="about__main__text">
+      <main className="about__main" id="about">
+        <TopArrow url={'about'}/>
+        <div className="about__main__content">
+          <div className="about__main__text">
             <h1>We Want You In Control</h1>
             <p>
               {" "}
@@ -16,13 +19,13 @@ function About() {
               non-negotiable.
             </p>
           </div>
-          <div class="">
-            <img class="about__main__img" src={ImgMain} alt="" />
+          <div className="">
+            <img className="about__main__img" src={ImgMain} alt="" />
           </div>
         </div>
       </main>
-      <div class="about__info">
-        <h2 class="">Who we are</h2>
+      <div className="about__info">
+        <h2 className="">Who we are</h2>
         <p>
           There are many things you can leave to chance and luck. Your home
           isn’t one of those things. At CityTech, we believe you should be the
@@ -32,8 +35,8 @@ function About() {
           the security of knowing what’s happening, at all times.
         </p>
       </div>
-      <div class="about__mission">
-        <div class="mission">
+      <div className="about__mission">
+        <div className="mission">
           <img src={Mission} alt="" />
           <h3>Our Mission</h3>
           <p>
@@ -41,7 +44,7 @@ function About() {
             automation experience
           </p>
         </div>
-        <div class="vision">
+        <div className="vision">
           <img src={Vission} alt="" />
           <h3>Our Vision</h3>
           <p>

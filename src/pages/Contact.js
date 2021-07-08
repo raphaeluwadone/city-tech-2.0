@@ -15,10 +15,8 @@ function Contact() {
         if(message && phone && email){
             emailjs.sendForm('service_j5qimqd', 'template_j8vwjmi', e.target, 'user_zets8ccql8GmuvqEeOi3c')
             .then((result) => {
-                console.log(result.text);
                 setToast({show: true, status: 'success'})
             }, (error) => {
-                console.log(error.text);
                 setToast({show: true, status: 'server_error'})
             });
             setEmail('');

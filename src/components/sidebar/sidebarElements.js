@@ -6,9 +6,9 @@ import { Link as LinkR} from 'react-router-dom'
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
-    width: 70%;
-    height: 60%;
-    background: #fff;
+    width: 50%;
+    min-height: 450px;
+    background: #FFF;
     display: grid;
     align-items: center;
     justify-items: end;
@@ -17,7 +17,13 @@ export const SidebarContainer = styled.aside`
     right: 0;
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({isOpen}) => (isOpen ? '0' : '-100%')} 
+    top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
+
+    @media screen and (max-width: 468px) {
+
+        height: 450px;
+        width: 60%;
+    }
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -36,7 +42,6 @@ export const Icon = styled.div`
 
 export const SidebarWrapper = styled.div`
     color: #fff;
-    // background: blue;
 `
 export const SidebarMenu = styled.ul`
     display: grid;
@@ -64,7 +69,7 @@ export const SidebarLink = styled(LinkR)`
     // background: blue;
 
     &:hover {
-        color: #01bf71;
+        font-weight: bolder;
         transition: 0.2 ease-in-out;
     }
 

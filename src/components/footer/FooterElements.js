@@ -11,6 +11,7 @@ export const FooterContainer = styled.div`
     align-items: center;
     padding: 0 60px;
     color: white;
+    position: relative;
 
     @media screen and (max-width: 768px) {
         height: 373px;
@@ -20,14 +21,11 @@ export const FooterContainer = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-
+        
     }
-
 `
 export const FooterLinks = styled.div`
     margin: 0 auto;
-
-
 `
 
 export const FooterList = styled.ul`
