@@ -13,8 +13,8 @@ function Contact() {
 
     function formSubmit(e) {
         e.preventDefault();
-        setLoading(true)
         if(message && phone && email){
+            setLoading(true)
             emailjs.sendForm('service_j5qimqd', 'template_j8vwjmi', e.target, 'user_zets8ccql8GmuvqEeOi3c')
             .then((result) => {
                 setToast({show: true, status: 'success'})
