@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import emailjs from 'emailjs-com';
 import Toast from '../generics/Toast';
+import { RotateSpinner } from 'react-spinners-kit'
 
 function Contact() {
 
@@ -8,15 +9,18 @@ function Contact() {
     const [phone, setPhone] = useState('')
     const [message, setMessage] = useState('')
     const [toast, setToast] = useState({show: false, status: ''})
+    const [loading, setLoading] = useState(false)
 
     function formSubmit(e) {
         e.preventDefault();
-
+        setLoading(true)
         if(message && phone && email){
             emailjs.sendForm('service_j5qimqd', 'template_j8vwjmi', e.target, 'user_zets8ccql8GmuvqEeOi3c')
             .then((result) => {
                 setToast({show: true, status: 'success'})
+                setLoading(false)
             }, (error) => {
+                setLoading(false)
                 setToast({show: true, status: 'server_error'})
             });
             setEmail('');
@@ -61,7 +65,7 @@ function Contact() {
                 <button type='submit'
                 className="req--btn"
               >
-                Send
+                {loading ?  <RotateSpinner size={20} color={'white'}/> : 'Send' }
               </button>
             </form>
 
