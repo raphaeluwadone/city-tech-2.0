@@ -7,7 +7,6 @@ import Home from "../pages/Home";
 import Services from "../pages/Services";
 export const ROUTES = [
     { path: "/", key: "ROOT", exact: true, component: () => <Home /> },
-    { path: "/home", key: "ROOT", exact: true, component: () => <Home /> },
     { path: "/about", key: "ROOT", exact: true, component: () => <About /> },
     { path: "/services", key: "ROOT", exact: true, component: () => <Services /> },
     { path: "/blog", key: "ROOT", exact: true, component: () => <Blog /> },

@@ -8,20 +8,20 @@ import { useLocation } from 'react-router-dom'
 function Navbar({ toggle }) {
     const location = useLocation()
     let showBtn = `${location.pathname == '/contact' ? '0' : '1'}`
-    const getNavLinkClass = (path) => location.pathname.startsWith(path) ? "active" : "";
+    const getNavLinkClass = (path) => location.pathname.endsWith(path) ? "active" : "";
     return (
         <>
          <Nav>
             <NavbarContainer>
-                <NavLogo to="/home">
+                <NavLogo to="/">
                     <img src={Logo} alt="cityTech logo"/>
                 </NavLogo>
                 <MobileIcon >
                     <FaBars onClick={toggle}/>
                 </MobileIcon>
                 <NavMenu>
-                    <NavItem className={`${getNavLinkClass('/home')}`}>
-                        <NavLinks to="./home">
+                    <NavItem className={`${getNavLinkClass('/')}`}>
+                        <NavLinks to="/">
                             Home
                         </NavLinks>
                     </NavItem>
