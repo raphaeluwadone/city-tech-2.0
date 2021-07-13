@@ -4,6 +4,7 @@ import { ImCancelCircle } from "react-icons/im";
 
 function Toast({toggle, toast}) {
     let message
+    let toastClass = toast.status === 'error' || toast.status === 'server_error' ? 'error' : 'success'
     if (toast.status == 'success') {
         message = "Thank you for contacting cityTech. A specialist would get to you shortly"
     }
@@ -18,7 +19,7 @@ function Toast({toggle, toast}) {
     }
     
     return (
-        <div className={`toast ${toast.status !== 'error' ? 'success' : 'error'}`}>
+        <div className={`toast ${toastClass}`}>
             <div className='cancel'><ImCancelCircle onClick={toggle}/></div>
             <p>{message}</p>
         </div>

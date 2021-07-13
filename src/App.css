@@ -1251,6 +1251,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+          
 }
 
 .home__products .card .card-body h5 {
@@ -1333,8 +1334,8 @@ body {
     /* background-color: yellow; */
   }
   .home__products .card-deck {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 450px;
+        grid-template-columns: 400px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1345,9 +1346,9 @@ body {
     margin: 60px auto;
   }
   .home__products .card {
-    width: 357px;
+    width: 100vw;
     margin: 40px auto;
-    height: 367px;
+    height: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     -webkit-box-shadow: 0 4px rgba(0, 0, 0, 0.1);
@@ -1357,12 +1358,15 @@ body {
     width: 100%;
   }
   .home__products .card .card-body {
-    padding: 7px 10px;
+    padding: 20px;
+    justify-content: flex-start;
+    height: auto;
   }
   .home__products .card .card-body h5 {
     font-weight: 700;
     font-size: 1.14813rem;
     line-height: 1.8rem;
+    margin-bottom: 10px;
   }
   .home__products .card .card-body p {
     width: 100%;
@@ -1409,7 +1413,7 @@ body {
     margin: 10px auto;
   }
   .home__info .card-deck {
-    width: 100%;
+    width: 100vw;
     grid-column-gap: 15px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1439,20 +1443,20 @@ body {
     max-width: 22.29437rem;
   }
   .home__products .card-deck {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 450px;
+        grid-template-columns: 450px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    /* width: 100%; */
     margin: 30px auto;
     height: auto;
   }
   .home__products .card {
-    max-width: 287px;
+    width: 100%;
     margin: 30px auto;
     height: auto;
     /* max-height: 558px; */
@@ -1465,14 +1469,17 @@ body {
     padding: 5px 7px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-            background-color: red;
-    min-height: 323px;
+            justify-content: flex-start;
+    height: auto;
   }
+  /* .home__products .card .card-body:first-of-type {
+    min-height: 420px;
+  } */
   .home__products .card .card-body h5 {
     /* font-weight: 400; */
     font-size: 1.24312rem;
     line-height: 2.26562rem;
+    
 
   }
   .home__products .card .card-body p {

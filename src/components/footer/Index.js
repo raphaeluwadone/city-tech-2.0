@@ -9,6 +9,7 @@ function Footer() {
 
     const [subscriber, setSubscriber] = useState('');
     const [toast, setToast] = useState({show: false, status: ''})
+    const [email, setEmail] = useState('')
 
     useEffect(() => {
         if(toast.show){
@@ -21,7 +22,12 @@ function Footer() {
       const toggleToast = () => setToast({...toast, show: !toast.show})
       
       const subscribed = (e) => {
+          
         e.preventDefault()
+        if (email.length <= 0) {
+            setToast({show: true, status: 'error'})
+            return
+        }
         setToast({show: true, status: 'subscribed'})
     }
 
@@ -49,7 +55,7 @@ function Footer() {
                 <FooterForm>
                     <p>Be the first to see new blog posts</p>
                     <form onSubmit={subscribed}>
-                        <input type="text" placeholder="Your email address" />
+                        <input type="text" placeholder="Your email address" value={email} onChange={(e)=>setEmail(e.target.value)}/>
                         <input type="submit" value="Subscribe" />
                     </form>
                 </FooterForm>
